@@ -8,7 +8,7 @@ function App() {
   const [grouped, setGrouped] = useState({})
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('data.json')
       .then(res => res.json())
       .then(data => {
         const group = {}
